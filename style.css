@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(rgb(152, 162, 173), rgb(18, 23, 37));    
+    display: grid;
+}
+
+/* input {
+    margin: 20px;
+    display: grid;
+} */
+
+#table {
+    margin: 20px;
+    position: relative;
+    /* width: 50%; */
+    /* display: grid; */
+}
+
+img {
+    display: grid;
+    width: 50%;
+    height: auto;
+    /* border: 20px solid slategrey; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+/* .imageContainer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+} */
+
+.imageContainer {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* br {
+    content: '\A';
+    display: contents;
+    white-space: pre;
+  } */
