@@ -1,14 +1,28 @@
+/* choosing a background was surprising tedious  */
+
 body {
-    background: linear-gradient(rgb(155 161 173), rgb(218 186 169), rgb(35 39 49));
-    background-repeat: no-repeat;
-    background-size: initial;  
+    background-image: url(/imgs/a_vintage-faded-paper-texture.jpeg);
+    /* background: linear-gradient(rgb(155 161 173), rgb(218 186 169), rgb(35 39 49)); */
+    /* background-repeat: no-repeat; */
+    background-size: contain;
     display: grid;
     font-family: 'EB Garamond', serif;
     text-align: center;
+}
+
+input {
+    font-family: 'EB Garamond', serif;
 
 }
+
+button {
+    font-family: 'EB Garamond', serif;
+
+}
+
 h1 {
     font-size: 40px;
+    /* background-image: url(/imgs/WOT_banner1.jpeg); */
 }
 
 header {
@@ -23,6 +37,8 @@ p {
 #searchDiv {
     position: relative;
 }
+
+/* I was trying to move the images into columns here */
 
 #table {
     margin: 20px;

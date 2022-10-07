@@ -1,8 +1,22 @@
+// Here, you can see that the javascript button was not working for me. When I added the eventListener, the button would "dispear" and I didn't have time to figure out why.
+
 // const moraineBioBtn = document.createElement('button').addEventListener("click", moraineRevealFunc)
 // moraineBioBtn.innerHTML = 'BIO'
 // moraineBioBtn.addEventListener("click", moraineRevealFunc())
 // const moraineCard = document.getElementById('moraine').appendChild(moraineBioBtn)
 
+// The search bar
+const characterName = document.getElementsByClassName("name")
+
+const searchBar = () => {
+  let search = document.getElementById("searchInput")
+  if (search.innerHTML == characterName) {
+    return 
+  }
+}
+
+
+// Created a template for profile reveals.
 const moraineRevealFunc = () => {
     let x = document.getElementById("morBtnDiv");
     x.innerHTML = "A powerful Aes Sedai of the Blue Ajah, Moiraine has been on a quest to find the Dragon Reborn. She follows a prophecy about this reincarnated figure from an Aes Sedai sister and wants to find him or her before the Dark One can. Moiraine is a reserved guide figure overflowing with quiet wisdom and strong talent for the One Power. She’s kind of intimidating to the youths she brings into her journey. But Moiraine always has the greater good at heart."
