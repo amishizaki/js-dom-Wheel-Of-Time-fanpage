@@ -42,12 +42,13 @@ p {
 
 #table {
     margin: 20px;
-    /* display: -moz-grid-line;
-    flex-wrap: wrap; */
+    display: flex-wrap;
+    column-count: 3;
+    /*flex-wrap: wrap; */
     /* position: inherit ; */
     /* width: fit-content; */
     /* display: grid; */
-    grid-template-columns: 400px 400px 400px;
+    /* grid-template-columns: 400px 400px 400px; */
     /* border: 5px solid black */
 }
 
