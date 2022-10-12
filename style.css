@@ -4,7 +4,7 @@ body {
     background-image: url(/imgs/a_vintage-faded-paper-texture.jpeg);
     /* background: linear-gradient(rgb(155 161 173), rgb(218 186 169), rgb(35 39 49)); */
     /* background-repeat: no-repeat; */
-    background-size: contain;
+    background-size: cover;
     display: grid;
     font-family: 'EB Garamond', serif;
     text-align: center;
@@ -42,14 +42,25 @@ p {
 
 #table {
     margin: 20px;
-    display: flex-wrap;
-    column-count: 3;
-    /*flex-wrap: wrap; */
-    /* position: inherit ; */
-    /* width: fit-content; */
+    width: 100%;
+    height: 160em;
+    /* display: flex-wrap; */
+    flex-wrap: wrap;
+    position: relative;
     /* display: grid; */
-    /* grid-template-columns: 400px 400px 400px; */
+    /* grid-template-columns: inherit */
     /* border: 5px solid black */
+}
+
+ul {
+    column-count: 3;
+    /* display:inline-flex; */
+    position: relative;
+    
+}
+
+li {
+    list-style: none;
 }
 
 img {

@@ -13,60 +13,73 @@
         <header>
             <h1>The Wheel of Time</h1>
             <div id="searchDiv">
-                <input id="searchInput" value="name a character"/>
+                <input id="searchInput" placeholder="name a character"/>
                 <button>search</button>
             </div>
         </header>
 
         <div id="table">
+            <ul id="characterList">
+                <li>
+                    <div id="moraine" class="imageContainer">
+                        <p class="name">Moiraine Damodred</p>
+                        <img src="./imgs/moraine2.webp" id="morImg" alt="Moraine contemplating life and her job. Very relatable."/>
+                        <button id="morBtn" onclick="moraineRevealFunc()">bio</button>
+                        <button id="morStatBtn" onclick="moraineStatus()">status</button>
+                        <div id="morBtnDiv"></div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div id="lan" class="imageContainer">
+                        <p class="name">al’Lan Mandragoran</p>
+                        <img src="./imgs/lan_al’Mandragoran.jpeg" alt="Lan holding a sword and looking cool af"/>
+                        <button id="lanBtn" onclick="lanRevealFunc()">bio</button>
+                        <button id="lanStatBtn" onclick="lanStatus()">status</button>
+                        <div id="lanBtnDiv"></div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div id="egwene" class="imageContainer">
+                        <p class="name">Egwene Al’Vere</p>
+                        <img src="./imgs/egwene_al’Vere.webp" alt="Egene looking off to the side with a small smile"/>
+                        <button onclick="egweneReveal()">bio</button>
+                        <button onclick="egweneStatus()">status</button>
+                        <div id="egwBtnDiv"></div>
+                    </div>
+                </li>
 
-            <div id="moraine" class="imageContainer">
-                <p class="name">Moiraine Damodred</p>
-                <img src="./imgs/moraine2.webp" id="morImg" alt="Moraine contemplating life and her job. Very relatable."/>
-                <button id="morBtn" onclick="moraineRevealFunc()">bio</button>
-                <button id="morStatBtn" onclick="moraineStatus()">status</button>
-                <div id="morBtnDiv"></div>
-            </div>
+                <li>
+                    <div id="perrin" class="imageContainer">
+                        <p class="name">Perrin Aybara</p>
+                        <img src="./imgs/perrinAybara.webp" alt="Perrin being hella serious"/>
+                        <button onclick="perrinReveal()">bio</button>
+                        <button onclick="perrinStatus()">status</button>
+                        <div id="perBtnDiv"></div>
+                    </div>
+                </li>
+                
+                <li>
+                    <div id="rand" class="imageContainer">
+                        <p class="name">Rand Al’Thor</p>
+                        <img src="./imgs/rand_al’Thor.webp" alt="Rand staring with intent curiosity??He's probably looking at Egwene"/>
+                        <button onclick="randReveal()">bio</button>
+                        <button onclick="randStatus()">status</button>
+                        <div id="randBtnDiv"></div>
+                    </div>
+                </li>
 
-            <div id="lan" class="imageContainer">
-                <p class="name">al’Lan Mandragoran</p>
-                <img src="./imgs/lan_al’Mandragoran.jpeg" alt="Lan holding a sword and looking cool af"/>
-                <button id="lanBtn" onclick="lanRevealFunc()">bio</button>
-                <button id="lanStatBtn" onclick="lanStatus()">status</button>
-                <div id="lanBtnDiv"></div>
-            </div><br>
-
-            <div id="egwene" class="imageContainer">
-                <p class="name">Egwene Al’Vere</p>
-                <img src="./imgs/egwene_al’Vere.webp" alt="Egene looking off to the side with a small smile"/>
-                <button onclick="egweneReveal()">bio</button>
-                <button onclick="egweneStatus()">status</button>
-                <div id="egwBtnDiv"></div>
-            </div>
-
-            <div id="perrin" class="imageContainer">
-                <p class="name">Perrin Aybara</p>
-                <img src="./imgs/perrinAybara.webp" alt="Perrin being hella serious"/>
-                <button onclick="perrinReveal()">bio</button>
-                <button onclick="perrinStatus()">status</button>
-                <div id="perBtnDiv"></div>
-            </div>
-
-            <div id="rand" class="imageContainer">
-                <p class="name">Rand Al’Thor</p>
-                <img src="./imgs/rand_al’Thor.webp" alt="Rand staring with intent curiosity??He's probably looking at Egwene"/>
-                <button onclick="randReveal()">bio</button>
-                <button onclick="randStatus()">status</button>
-                <div id="randBtnDiv"></div>
-            </div>
-
-            <div id="mat" class="imageContainer">
-                <p class="name">Matrim Cauthon</p>
-                <img src="./imgs/matCauthon.webp" alt="Mat looking a little sketchy and a little tiredd"/>
-                <button onclick="matReveal()">bio</button>
-                <button onclick="matStatus()">status</button>
-                <div id="matBtnDiv"></div>
-            </div>
+                <li>
+                    <div id="mat" class="imageContainer">
+                        <p class="name">Matrim Cauthon</p>
+                        <img src="./imgs/matCauthon.webp" alt="Mat looking a little sketchy and a little tiredd"/>
+                        <button onclick="matReveal()">bio</button>
+                        <button onclick="matStatus()">status</button>
+                        <div id="matBtnDiv"></div>
+                    </div>
+                </li>
+            </ul>
         </div>
         <script src="script.js" async defer></script>
     </body>

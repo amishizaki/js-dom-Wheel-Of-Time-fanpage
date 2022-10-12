@@ -9,13 +9,14 @@
 const characterName = document.getElementsByClassName("name")
 
 const searchBar = () => {
+  let index = document.getElementById("characterList")
   let search = document.getElementById("searchInput")
-  if (search.innerHTML == characterName) {
-    return 
+  if (search.innerHTML == index.toLowerCase) {
+    return index.li
   }
 }
 
-
+ 
 // Created a template for profile reveals.
 const moraineRevealFunc = () => {
     let x = document.getElementById("morBtnDiv");
