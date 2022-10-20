@@ -9,23 +9,34 @@
         
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
         <header>
             <h1>The Wheel of Time</h1>
-            <div id="searchDiv">
-                <input id="searchInput" placeholder="name a character"/>
-                <button>search</button>
+
+            <!-- The searchBar -->
+            <div class="form-container">
+                <form class="form">
+                    <input id="search" type="text" class="input" placeholder="search..."/>
+                    <button id="searchBtn" class="find-results">search</button>
+                    <button id="clear" class="clear-results">clear</button>
+                </form>
+    
             </div>
         </header>
 
-        <div id="table">
-            <ul id="characterList">
+        <!-- The Characters -->
+        <div class="results-container">
+            <ul class="results-list" id="list">
                 <li>
                     <div id="moraine" class="imageContainer">
                         <p class="name">Moiraine Damodred</p>
+
                         <img src="./imgs/moraine2.webp" id="morImg" alt="Moraine contemplating life and her job. Very relatable."/>
+
                         <button id="morBtn" onclick="moraineRevealFunc()">bio</button>
                         <button id="morStatBtn" onclick="moraineStatus()">status</button>
+
                         <div id="morBtnDiv"></div>
                     </div>
                 </li>
